@@ -1,7 +1,7 @@
 class CheckoutTest extends munit.FunSuite {
   test("checkout with different values") {
     val total = Checkout.scan(List("Apple", "Orange", "oRange", "apple", null, "Duff"))
-    assertEquals(total, 200)
+    assertEquals(total, 170)
   }
 
   test("checkout with no values") {

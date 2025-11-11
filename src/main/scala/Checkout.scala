@@ -4,7 +4,7 @@ object Checkout {
 
   private def getPriceOf(item: String): Int =  Option(item).map(_.toLowerCase) match {
     case Some("apple") => 60
-    case Some("orange") => 40
+    case Some("orange") => 25
     case _ => 0
   }
 
